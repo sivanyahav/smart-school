@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".view.menuTeacher">
+
+    <TextView
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Teacher Menu"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/Profile"
+        android:layout_below="@+id/Menu"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="85dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageprofile"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/Clickprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="27sp"
+            android:layout_marginVertical="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/Grades"
+        android:layout_below="@+id/Profile"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageGrades"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon11" />
+
+        <TextView
+            android:id="@+id/ClickGrades"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Update Grades"
+            android:textSize="27sp"
+            android:layout_marginVertical="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:id="@+id/Presence"
+        android:layout_below="@+id/Grades"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imagepresence"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:src="@drawable/presen" />
+
+        <TextView
+            android:id="@+id/ClickPresence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Absences"
+            android:textSize="27sp"
+            android:layout_marginVertical="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/StudentsList"
+        android:layout_below="@+id/Presence"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageStudentsList"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:src="@drawable/studentslist" />
+
+        <TextView
+            android:id="@+id/ClickStudentsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Students List"
+            android:textSize="27sp"
+            android:layout_marginVertical="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StudentsList"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#a0a0a0"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginTop="8dp"
+        android:text="Logout" />
+
+
+
+
+</RelativeLayout>
